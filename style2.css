@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-image: linear-gradient(to bottom, rgba(43, 42, 42, 0.3), rgba(34, 34, 34, 0.3)), url('img/colza.jpg');
+    width: 1365px;
+    height: 657px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#garde{
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    /* margin: 40px auto; */
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 1100px;
+
+}
+
+#search-page{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+#result{
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    /* margin: 40px auto; */
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 1100px;
+}
+
+#haut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(180, 179, 179, 0.664);
+    color: rgb(20, 144, 245);
+    font-family: sans-serif;
+    font-size: 160%;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+#description{
+    background-color: rgb(236, 235, 235);
+    padding: 20px;
+}
+#description h2{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+
+#description .content{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(97, 95, 95);
+}
+
+
+#search{
+    padding: 20px;
+    color: rgb(20, 131, 221);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#prcgc{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+#prcgc input{
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 3px;
+    width: 500px;
+}
+.about a{
+    background-color: rgb(216, 216, 216) !important;
+    color: rgb(116, 116, 116) !important;
+    border: 1px solid rgb(216, 216, 216);
+    font-family: sans-serif;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#prc{
+    padding: 5px;
+    
+}
+#search h2{
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(20, 131, 221);
+    width: 270px;
+}
+#search input{
+    width: 500px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(204, 204, 204, 0.753);
+}
+
+
+#formulaire button{
+    background-color: rgb(0, 119, 255);
+    color: rgb(243, 243, 243);
+    border: none;
+    padding: 8px 15px;
+    transition: 0.2s;
+}
+
+#formulaire button:hover{
+    cursor: pointer;
+    background-color: rgb(16, 113, 192);
+    color: white;
+    transition: 0.2s;
+
+}
+
+#bas{
+    padding-top: 50px;
+    border-top: 1px solid rgba(192, 191, 191, 0.781);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    color: rgb(177, 175, 175);
+}
+.err, .notfound{
+    color: rgb(121, 10, 10);
+    background-color: rgb(253, 209, 209);
+    padding: 8px 40px;
+    margin-left: 20px;
+    font-size: 16px;
+    display: none;
+}
+#bas a{
+    padding: 8px 12px;
+    background-color: rgb(209, 61, 7);
+    font-family: sans-serif;    
+    color: white;
+    text-decoration: none;
+}
+
+#gene_desc{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    color: rgb(124, 124, 124);
+    font-family: sans-serif;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+}
+.animation{
+    display: none;
+    z-index: 20;
+    position: fixed;
+    top: 250px;
+    left: 450px;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    
+}
+table td{
+    padding: 5px;
+}
+
+
+.blast{
+    color: rgb(0, 166, 255);
+    transition: 0.2s;
+}
+
+.blast:hover{
+    cursor: pointer;
+    color: rgb(23, 57, 192);
+    transition: 0.2s;
+}
+
+
+#voile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(106, 106, 106, 0.664);
+    z-index: 20;
+    width: 100%;
+    height: 130%;
+    display: none;
+}
+
+#voile img{
+    display: block;
+    margin: 100px auto;
+}
+#voile .close:hover{
+    cursor: pointer;
+    background-color: red;
+    transform: 0.2s;
+}
+#voile .close{
+    color: white;
+    background-color: rgb(179, 13, 13);
+    transform: 0.2s;
+    font-family: sans-serif;
+    padding: 8px 13px;
+    position: absolute;
+    top: 70px;
+    
+    left: 1180px;
+}
+
+#sformulaire{
+    display: flex;
+}
+
+.serr, .snotfound{
+    background-color: rgb(255, 200, 200);
+    font-family: sans-serif;
+    font: 16px;
+    color: rgb(150, 7, 7);
+    padding: 8px;
+    display: none;
+}
+
+.fa-trash{
+    color: rgb(170, 9, 9);
+    transition: 0.2s;
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: red;
+    transition: 0.2s;
+}
+.todelete{
+    background-color: rgb(255, 203, 203);
+}
+
+#formadd{
+    width: 1100px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.champ{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+.champ input{
+    padding: 5px;
+    border: 1px solid lightgray;
+    width: 300px;
+}
+#formulaire_add{
+    width: 550px;
+    margin: auto;
+}
+
+#additem{
+    padding: 8px 0px;
+    text-align: center;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    transition: 0.2s;
+    width: 500px;
+    margin-top: 20px;
+}
+#additem:hover{
+    cursor: pointer;
+    background-color: rgb(16, 97, 218);
+    color: white;
+    transition: 0.2s;
+}
+.success{
+    background-color: rgb(217, 247, 186);
+    color: rgb(21, 133, 15);
+    padding: 8px 0px;
+    text-align: center;
+    margin-top: 10px;
+    width: 500px;
+    display: none;
+}
+.err_saisie{
+    background-color: rgb(247, 186, 186);
+    color: rgb(211, 12, 12);
+    padding: 8px 0px;
+    text-align: center;
+    margin-top: 10px;
+    width: 500px;
+    display: none;
+}
+
+
+#about{
+    width: 950px;
+    margin: 30px auto;
+}
+
+.us_desc{
+    width: 900px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(87, 86, 86);
+    letter-spacing: 1px;
+    text-align: justify;
+    background-color: rgb(238, 237, 237);
+    border-bottom: 1px solid gray;
+    margin: 30px auto;
+}
+
+.pr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.pr .pr_desc{
+    width: 500px;
+    text-align: justify;
+}
+.pr img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
