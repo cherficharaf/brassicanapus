@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+
+    <title>Search</title>
+</head>
+<body>
+
+    <div id="search-page">
+        <div id="haut">
+            
+            <div id="logo">
+                <a href="/">
+                    <img src="img/telum.png" alt="">
+                </a>
+            </div>
+            <div>
+                DATABASE OF BRASSICA NAPUS
+            </div>
+            
+        </div>
+    
+        <div class="animation">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+
+        <div id="gene_desc">
+            <h2>Nom du Gene</h2>
+            <div class="content">
+                The database of Brassica Napus is an interactive web-based platform which provide information About
+                genes expressions in different environmental and biological conditions.
+            </div>
+    
+        </div>
+
+        <div id="voile">
+            <div class="close">X</div>
+            <img src="blastap2/AP2 1.PNG" alt="">
+        </div>
+
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="color: rgb(80, 78, 78); font-family: sans-serif;">Gene List</h3>
+
+            <div id="ssearch">
+                <div id="sformulaire">
+                    <div class="serr">champs vide.</div>
+                    <div class="snotfound">aucun résultat.</div>
+                    <input type="text" style="width:400px; padding:5px" placeholder="keywords... example : HSF , AP2/ERF , R2R3-MYB">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div style="height: 1000px; overflow-y: auto;">
+            <table border=1>
+            
+   
+    
+            
+            </table>
+        </div>
+    
+    
+    
+    
+    
+    </div>
+    
+
+    <script src="jq.js"></script>
+    <script>
+        var d = <%- JSON.stringify(data)%>
+        
+        
+    </script>
+    <script src="search.js"></script>
+    
+
+</body>
+</html>

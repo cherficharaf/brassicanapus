@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+
+    <title>Search</title>
+</head>
+<body>
+
+    <div id="formadd">
+
+
+        <div class="animation">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+
+        <div id="haut">
+            
+            <div id="logo">
+                <a href="/">
+                    <img src="img/telum.png" alt="">
+                </a>
+            </div>
+            <div>
+                DATABASE OF BRASSICA NAPUS
+            </div>
+            
+        </div>
+
+        <h2>ADD NEW GENE</h2>
+
+        <div id="formulaire_add">
+
+            <div class="champ">
+                <label for="db">DataBase</label>
+                <select name="db" id="db">
+                    <option value="nac" selected>NAC</option>
+                    <option value="ap2">AP2/ERF</option>
+                    <option value="hsf">HSF</option>
+                    <option value="wrky">WRKY</option>
+                    <option value="mads">MADS-box</option>
+                </select>
+            </div>
+
+            <div class="champ">
+                <label for="description_">Description</label>
+                <input type="text" id="description_">
+            </div>
+
+            <div class="champ">
+                <label for="bnapus">Bnapus</label>
+                <input type="text" id="bnapus">
+            </div>
+
+            <div class="champ">
+                <label for="lienbnapus">LienBnapus</label>
+                <input type="text" id="lienbnapus">
+            </div>
+
+            <div class="champ">
+                <label for="athaliana">Athaliana</label>
+                <input type="text" id="athaliana">
+            </div>
+
+            <div class="champ">
+                <label for="lienathaliana">LienAthaliana</label>
+                <input type="text" id="lienathaliana">
+            </div>
+
+            <div class="champ">
+                <label for="brapa">Brapa</label>
+                <input type="text" id="brapa">
+            </div>
+
+            <div class="champ">
+                <label for="lienbrapa">LienBrapa</label>
+                <input type="text" id="lienbrapa">
+            </div>
+
+
+            <div class="champ">
+                <label for="blast">Blast</label>
+                <input type="text" id="blast">
+            </div>
+
+            <div class="champ">
+                <label for="img">Image</label>
+                <input type="text" id="img">
+            </div>
+
+            <div id="additem">
+                Valider
+            </div>
+
+            <div class="err_saisie">Erreur dans la saisie</div>
+            <div class="success">Enregistrement réussit.</div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+    
+
+    <script src="jq.js"></script>
+    <script src="form.js"></script>
+    
+    
+    
+
+</body>
+</html>
